@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>reddit search</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script type="text/javascript" src="js/reddit.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="title">reddit search</div>
+            <form id="searchform" target="searchtarget">
+                <input id="searchfield" class="textInput" type="text" placeholder="enter a phrase (or regex) to find the latest comments containing it" />
+                <br />
+                <input id="subredditfield" class="textInput" type="text" placeholder="subreddit (leave blank for all)" />
+                <br />
+                <input id="searchbutton" type="submit" value="search" />
+            </form>
+            <div id="resultcount"></div>
+            <div id="loadingimage"></div>
+            <iframe class="targetiframe" name="searchtarget"></iframe>
+        </div>
+    </body>
+</html>
