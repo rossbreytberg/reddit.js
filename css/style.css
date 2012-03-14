@@ -15,14 +15,7 @@ body {
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    background: #eeeeee;
-    background: -moz-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#eeeeee));
-    background: -webkit-linear-gradient(top, #eeeeee 0%,#eeeeee 100%);
-    background: -o-linear-gradient(top, #eeeeee 0%,#eeeeee 100%);
-    background: -ms-linear-gradient(top, #eeeeee 0%,#eeeeee 100%);
-    background: linear-gradient(top, #eeeeee 0%,#eeeeee 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 );
+    background: #f2f2f2;
 }
 
 a {
@@ -48,22 +41,21 @@ a:visited {
 #container {
     width: 800px;
     margin: auto;
-    margin-bottom: 10px;
     background: #eee;
     border-radius: 0px 0px 3px 3px;
     padding: 10px;
-    box-shadow: 0px 1px 2px #000000;
-    -webkit-box-shadow: 0px 1px 2px #000000;
-    -moz-box-shadow: 0px 1px 2px #000000;
-    filter: progid:DXImageTransform.Microsoft.dropShadow(color=#000000, offX=0px, offY=1px, positive=true);
-    background: #e0e8ec;
-    background: -moz-linear-gradient(top, #e0e8ec 0%, #d0dbe0 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0e8ec), color-stop(100%,#d0dbe0));
-    background: -webkit-linear-gradient(top, #e0e8ec 0%,#d0dbe0 100%);
-    background: -o-linear-gradient(top, #e0e8ec 0%,#d0dbe0 100%);
-    background: -ms-linear-gradient(top, #e0e8ec 0%,#d0dbe0 100%);
-    background: linear-gradient(top, #e0e8ec 0%,#d0dbe0 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e8ec', endColorstr='#d0dbe0',GradientType=0 );
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+    filter: progid:DXImageTransform.Microsoft.dropShadow(color=rgba(0,0,0,0.4), offX=0px, offY=0px, positive=true);
+    background: #e1efff;
+    background: -moz-linear-gradient(top, #e1efff 0%, #c7e3ff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e1efff), color-stop(100%,#c7e3ff));
+    background: -webkit-linear-gradient(top, #e1efff 0%,#c7e3ff 100%);
+    background: -o-linear-gradient(top, #e1efff 0%,#c7e3ff 100%);
+    background: -ms-linear-gradient(top, #e1efff 0%,#c7e3ff 100%);
+    background: linear-gradient(top, #e1efff 0%,#c7e3ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1efff', endColorstr='#c7e3ff',GradientType=0 );
 }
 
 #searchform {
@@ -79,18 +71,26 @@ a:visited {
     padding: 8px 4px;
     margin-top: 3px;
     margin-bottom: 3px;
-    border-radius: 3px;
-    box-shadow: 0px 1px 2px #999;
-    -webkit-box-shadow: 0px 1px 2px #999;
-    -moz-box-shadow: 0px 1px 2px #999;
-    filter: progid:DXImageTransform.Microsoft.dropShadow(color=#999, offX=0px, offY=1px, positive=true);
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+    filter: progid:DXImageTransform.Microsoft.dropShadow(color=rgba(0,0,0,0.3), offX=0px, offY=0px, positive=true);
+    background: rgb(244,244,244);
+    background: -moz-linear-gradient(top, rgba(244,244,244,1) 0%, rgba(252,252,252,1) 20%, rgba(252,252,252,1) 80%, rgba(244,244,244,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(244,244,244,1)), color-stop(20%,rgba(252,252,252,1)), color-stop(80%,rgba(252,252,252,1)), color-stop(100%,rgba(244,244,244,1)));
+    background: -webkit-linear-gradient(top, rgba(244,244,244,1) 0%,rgba(252,252,252,1) 20%,rgba(252,252,252,1) 80%,rgba(244,244,244,1) 100%);
+    background: -o-linear-gradient(top, rgba(244,244,244,1) 0%,rgba(252,252,252,1) 20%,rgba(252,252,252,1) 80%,rgba(244,244,244,1) 100%);
+    background: -ms-linear-gradient(top, rgba(244,244,244,1) 0%,rgba(252,252,252,1) 20%,rgba(252,252,252,1) 80%,rgba(244,244,244,1) 100%);
+    background: linear-gradient(top, rgba(244,244,244,1) 0%,rgba(252,252,252,1) 20%,rgba(252,252,252,1) 80%,rgba(244,244,244,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#f4f4f4',GradientType=0 );
 }
 
 .textInput:focus {
-    box-shadow: 0px 1px 2px #000000;
-    -webkit-box-shadow: 0px 1px 2px #000000;
-    -moz-box-shadow: 0px 1px 2px #000000;
-    filter: progid:DXImageTransform.Microsoft.dropShadow(color=#000000, offX=0px, offY=1px, positive=true);
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.6);
+    filter: progid:DXImageTransform.Microsoft.dropShadow(color=rgba(0,0,0,0.6), offX=0px, offY=0px, positive=true);
 }
 
 #searchbutton {
@@ -133,10 +133,29 @@ a:visited {
 
 #results {
     margin-top: 10px;
+    border-radius: 4px;
+    border: 1px;
+    border-style: solid;
+    border-color: #888;
+    background: rgb(249,249,249);
+    background: -moz-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(252,252,252,1) 50%, rgba(249,249,249,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(249,249,249,1)), color-stop(50%,rgba(252,252,252,1)), color-stop(100%,rgba(249,249,249,1)));
+    background: -webkit-linear-gradient(top, rgba(249,249,249,1) 0%,rgba(252,252,252,1) 50%,rgba(249,249,249,1) 100%);
+    background: -o-linear-gradient(top, rgba(249,249,249,1) 0%,rgba(252,252,252,1) 50%,rgba(249,249,249,1) 100%);
+    background: -ms-linear-gradient(top, rgba(249,249,249,1) 0%,rgba(252,252,252,1) 50%,rgba(249,249,249,1) 100%);
+    background: linear-gradient(top, rgba(249,249,249,1) 0%,rgba(252,252,252,1) 50%,rgba(249,249,249,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#f9f9f9',GradientType=0 );
+}
+
+.resultfirst {
+    padding: 15px;
 }
 
 .result {
-    border-width: 1px 0px 0px 0px;
+    border-top: 1px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
     border-style: solid;
     border-color: #888;
     padding: 15px;
@@ -156,10 +175,11 @@ a:visited {
     width: 16px;
     height: 11px;
     margin: auto;
+    margin-top: 5px;
 }
 
 #resultcount {
-    font-color: #888;
+    color: #333;
     font-size: 11px;
 }
 

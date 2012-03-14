@@ -9,7 +9,11 @@ window.onload = function() {
         */
         var results = target
         var result = document.createElement('div')
-        result.setAttribute('class', 'result')
+        if (results.childNodes.length == 0) {
+            result.setAttribute('class', 'resultfirst')
+        } else {
+            result.setAttribute('class', 'result')
+        }
         results.appendChild(result)
         var commentNode = document.createElement('span')
         commentNode.innerHTML = comment.body.replace(regex, '$1<span class="highlight">$2</span>$3')
@@ -80,6 +84,12 @@ window.onload = function() {
             if (searchIsActive()) {
                 if (loadingcount == 0 && searchIsActive()) {
                     loadingimage.style.visibility = 'hidden'
+                    if (results.childNodes.length == 0) {
+                        var noresult = document.createElement('div')
+                        noresult.setAttribute('class', 'resultfirst')
+                        noresult.appendChild(document.createTextNode('no results found :('))
+                        results.appendChild(noresult)
+                    }
                 }
                 updateSearchingText(commentsread, postsread, resultsfound)
             }
