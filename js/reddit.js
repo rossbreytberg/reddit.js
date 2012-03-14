@@ -3,6 +3,10 @@ var Reddit = {}
 Reddit.requestCount = 0
 
 Reddit.apiRequest = function(url, callback) {
+    /* Fetches JSON from the reddit API at the given URL by using JSONP.
+    url: The url to make a request to.
+    callback: (Optional) A function called when the response is received. If not specified, the response will be returned instead.
+    */
     Reddit.requestCount++
     var res = 'req'+Reddit.requestCount
     var html = document.getElementsByTagName('html')[0]
@@ -103,7 +107,7 @@ var Post = function(raw, subreddit, session) {
     }
 
     self.getComments = function(onComment, onEnd) {
-        /* Returns a list of comments on the post.
+        /* Retrieves the comments on this post.
         onComment: (Optional) A function called each time a comment is retrieved. It will be given one Comment object as an argument. If not specified, function returns a list instead.
         onEnd: (Optional) A function called when all of the comments have been retrieved. It is not given an argument.
         */
@@ -172,7 +176,7 @@ var Comment = function(raw, parent, post, session) {
     }
 
     self.getReplies = function(onReply, onEnd) {
-        /* Returns a list of replies to this comment.
+        /* Retrieves the replies to this comment.
         onReply: (Optional) A function called each time a reply is retrieved. It will be given one Comment object as an argument. If not specified, function returns a list instead.
         onEnd: (Optional) A function called when all of the replies have been retrieved. It is not given an argument.
         */
