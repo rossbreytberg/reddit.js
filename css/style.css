@@ -1,8 +1,6 @@
-@font-face { font-family: Helvetica; src: url('../fonts/Helvetica.ttf'); }
-
 html {
     min-height: 100%;
-    font-family: Helvetica;
+    font-family: arial;
 }
 
 body {
